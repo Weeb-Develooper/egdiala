@@ -30,7 +30,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['@/plugins/typed.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -52,10 +52,18 @@ export default {
     theme: {
       dark: true,
       themes: {
+        light: {
+          primary: '#3F51B5',
+          secondary: '#b0bec5',
+          accent: '#8c9eff',
+          error: '#b71c1c',
+          bground: '#ffffff',
+          btnprim: '#3F51B5'
+        },
         dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
+          primary: '#1A237E',
+          accent: '#8c9eff',
+          secondary: '#283593',
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
