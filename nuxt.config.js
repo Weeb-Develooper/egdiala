@@ -84,5 +84,8 @@ export default {
       if (isClient) {
         config.devtool = 'source-map'
       }}
+  },
+  generate: {
+    fallback: true
   }
 }
