@@ -9,7 +9,7 @@
     </v-row>
 
     <v-row>
-      <v-col cols="12" md="4" v-for="card in cards" :key="card">
+      <v-col v-for="card in cards" :key="card" cols="12" md="4">
         <v-card
           class="mx-auto"
           max-width="360"
@@ -60,18 +60,6 @@
 <script>
 export default {
   name: 'Services',
-  head() {
-    return {
-      title: 'Services',
-      meta: [
-        {
-          hid: 'description',
-          name: 'services',
-          content: 'My skillset'
-        }
-      ]
-    }
-  },
 
   data: () => ({
     cards: [
@@ -113,6 +101,18 @@ export default {
       }
     ]
   }),
+  head() {
+    return {
+      title: 'Services',
+      meta: [
+        {
+          hid: 'description',
+          name: 'services',
+          content: 'My skillset'
+        }
+      ]
+    }
+  },
   inject: ['theme']
 }
 </script>

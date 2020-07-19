@@ -36,7 +36,7 @@
       </v-row>
 
       <v-row>
-        <v-col cols="12" md="4" v-for="card in cards" :key="card">
+        <v-col v-for="card in cards" :key="card" cols="12" md="4">
           <v-lazy
             v-model="isActive"
             :options="{
@@ -95,7 +95,7 @@
               <v-row
                 class="d-flex flex-row justify-center align-center mx-5 my-5 pt-12"
               >
-                <v-col cols="12" md="6" v-for="input in inputs" :key="input">
+                <v-col v-for="input in inputs" :key="input" cols="12" md="6">
                   <v-text-field
                     :type="input.type"
                     :name="input.name"
@@ -142,18 +142,6 @@
 <script>
 import Typed from 'typed.js'
 export default {
-  head() {
-    return {
-      title: 'Home',
-      meta: [
-        {
-          hid: 'description',
-          name: 'home',
-          content: 'Welcome to my portfolio website.'
-        }
-      ]
-    }
-  },
   data() {
     return {
       typed: null,
@@ -216,6 +204,18 @@ export default {
         startDelay: '300',
         loop: 'true'
       })
+    }
+  },
+  head() {
+    return {
+      title: 'Home',
+      meta: [
+        {
+          hid: 'description',
+          name: 'home',
+          content: 'Welcome to my portfolio website.'
+        }
+      ]
     }
   }
 }

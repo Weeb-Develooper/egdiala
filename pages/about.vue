@@ -133,19 +133,6 @@
 <script>
 export default {
   name: 'About',
-  head() {
-    return {
-      title: 'About',
-      meta: [
-        {
-          hid: 'description',
-          name: 'about',
-          content:
-            'I’m a Fullstack Web Developer based in Lagos, Nigeria and I’m passionate about making the web accessible to everyone and building communities...'
-        }
-      ]
-    }
-  },
 
   data: () => ({
     reverse: true,
@@ -199,6 +186,19 @@ export default {
       } else {
         this.dense = false
       }
+    }
+  },
+  head() {
+    return {
+      title: 'About',
+      meta: [
+        {
+          hid: 'description',
+          name: 'about',
+          content:
+            'I’m a Fullstack Web Developer based in Lagos, Nigeria and I’m passionate about making the web accessible to everyone and building communities...'
+        }
+      ]
     }
   },
   inject: ['theme']

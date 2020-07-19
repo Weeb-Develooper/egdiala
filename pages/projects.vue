@@ -2,9 +2,9 @@
   <div>
     <v-container>
       <v-row
-        class="justify-center align-center"
         v-for="project in projects"
         :key="project"
+        class="justify-center align-center"
       >
         <v-col cols="12">
           <v-lazy
@@ -58,20 +58,20 @@
 
                   <v-card-actions>
                     <v-btn
+                      v-if="project.live"
                       color="orange"
                       text
                       :href="project.live"
                       target="_blank"
-                      v-if="project.live"
                       >LIVE</v-btn
                     >
 
                     <v-btn
+                      v-if="project.git"
                       color="orange"
                       text
                       :href="project.git"
                       target="_blank"
-                      v-if="project.git"
                       >GitHub</v-btn
                     >
                   </v-card-actions>
@@ -88,18 +88,6 @@
 <script>
 export default {
   name: 'Projects',
-  head() {
-    return {
-      title: 'Projects',
-      meta: [
-        {
-          hid: 'description',
-          name: 'projects',
-          content: 'Works done by me.'
-        }
-      ]
-    }
-  },
 
   data: () => ({
     projects: [
@@ -230,6 +218,18 @@ export default {
         ]
       }
     ]
-  })
+  }),
+  head() {
+    return {
+      title: 'Projects',
+      meta: [
+        {
+          hid: 'description',
+          name: 'projects',
+          content: 'Works done by me.'
+        }
+      ]
+    }
+  }
 }
 </script>
