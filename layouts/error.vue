@@ -65,13 +65,6 @@ div {
   }
 }
 
-div:before,
-div:after {
-  content: attr(title);
-  position: absolute;
-  left: 0;
-}
-
 div:before {
   animation: glitchTop 1s linear infinite;
   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
