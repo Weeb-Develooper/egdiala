@@ -90,9 +90,9 @@ export default {
           { skill1: 'SQL', color: 'red' },
           { skill1: 'JavaScript', color: 'yellow' },
           { skill1: 'JQuery', color: 'indigo' },
+          { skill1: 'Element UI', color: 'blue lighten-1' },
           { skill1: 'Bootstrap', color: 'purple darken-3' },
           { skill1: 'Vuetify', color: 'blue darken-4' }
-          
         ]
       },
       {
