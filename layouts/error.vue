@@ -45,20 +45,6 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap');
 
-body {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  background: #131313;
-  color: #fff;
-  font-size: 96px;
-  font-family: 'https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap';
-  letter-spacing: -7px;
-}
-
 div {
   animation: glitch 1s linear infinite;
   font-size: 96px;
