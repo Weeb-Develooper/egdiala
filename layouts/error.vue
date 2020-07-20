@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-container>
     <v-row class="justify-center text-center align-center">
       <v-col cols="12" lg="6" md="6" sm="6">
         <div v-if="error.statusCode === 404">
@@ -16,7 +16,7 @@
         </div>
       </v-col>
     </v-row>
-  </v-app>
+  </v-container>
 </template>
 
 <script>
