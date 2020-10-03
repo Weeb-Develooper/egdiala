@@ -139,6 +139,13 @@ export default {
     dense: true,
     years: [
       {
+        color: 'orange',
+        year: '2020',
+        title: 'WayaPayChat',
+        body:
+          "I got a job in WayaPayChat, a fintech company, on the 25th of July for the role of a frontend engineer. I'm currently developing their admin dashboard with VueJs which is used to manage their customers and show daily statistics and reporting. The experience has been amazing so far and I've been able to learn a lot and improve myself. Ps... I'm still a student 😏"
+      },
+      {
         color: 'cyan',
         year: '2019',
         title: 'SIWES',

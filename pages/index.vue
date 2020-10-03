@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-overlay
-      v-if="isLoading == true"
+      v-if="isLoading"
       :absolute="absolute"
       :opacity="opacity"
       :value="overlay"
@@ -208,11 +208,11 @@ export default {
   updated() {
     this.clickToUseTyped()
   },
-  mounted() {
+  created() {
     setTimeout(() => {
-      this.overlay = false
       this.isLoading = false
-    }, 10000)
+      this.overlay = false
+    }, 5000)
   },
   methods: {
     clickToUseTyped() {
