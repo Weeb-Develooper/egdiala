@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
     <v-navigation-drawer v-model="drawer" temporary app>
       <template v-slot:prepend>
         <v-list-item two-line>
@@ -35,49 +35,27 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar hide-on-scroll color="primary" app dark>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-
-      <v-toolbar-title class="white--text" v-text="title" />
-      <v-spacer />
-      <v-btn icon @click="toggleTheme">
-        <v-icon>{{ theme }}</v-icon>
-      </v-btn>
-    </v-app-bar>
-    <v-main>
+    <v-app-bar app absolute color="transparent" dark flat> </v-app-bar>
+    <v-main class="height-100">
       <nuxt />
     </v-main>
 
-    <v-footer class="pa-0">
-      <v-card
-        flat
-        tile
-        width="100%"
-        class="primary lighten-1 white--text text-center"
-        dark
-      >
-        <v-card-text>
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4 white--text"
-            :href="icon.url"
-            target="_blank"
-            icon
+    <v-footer
+      class="card-border"
+      app
+      dark
+      padless
+      :style="{ background: $vuetify.theme.themes.dark.background }"
+    >
+      <v-container>
+        <v-row>
+          <v-col cols="12" class="d-flex align-center secondary--text text-left"
+            ><h3 class="font-weight-medium">
+              Ⓒ Egwuchukwu Diala {{ new Date().getFullYear() }}
+            </h3></v-col
           >
-            <v-icon size="24px">{{ icon.icn }}</v-icon>
-          </v-btn>
-        </v-card-text>
-
-        <v-container>
-          <v-divider></v-divider>
-        </v-container>
-
-        <v-card-text class="white--text">
-          © {{ new Date().getFullYear() }} |
-          <strong>Weeb Devel∞per</strong>
-        </v-card-text>
-      </v-card>
+        </v-row>
+      </v-container>
     </v-footer>
   </v-app>
 </template>
@@ -136,6 +114,7 @@ export default {
     }
   },
   mounted() {
+    this.$vuetify.theme.dark = true
     const theme = localStorage.getItem('useDarkTheme')
     if (theme) {
       if (theme === 'true') {
@@ -172,3 +151,13 @@ export default {
   }
 }
 </script>
+
+<style>
+.height-100 {
+  height: 100%;
+}
+
+.card-border {
+  border: none;
+}
+</style>

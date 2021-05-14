@@ -1,7 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -61,9 +60,10 @@ export default {
           btnprim: '#3F51B5'
         },
         dark: {
-          primary: '#1A237E',
+          primary: '#1B1C1E',
           accent: '#8c9eff',
-          secondary: '#283593',
+          secondary: '#4B4B4B',
+          background: '#000',
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
@@ -83,7 +83,8 @@ export default {
       // Extend only webpack config for client-bundle
       if (isClient) {
         config.devtool = 'source-map'
-      }}
+      }
+    }
   },
   generate: {
     fallback: true
