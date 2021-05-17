@@ -12,8 +12,7 @@
         "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
     },
     "dependencies": {
-        "nuxt": "^2.15.5",
-        "vue-typical": "^1.6.2"
+        "nuxt": "^2.15.5"
     },
     "devDependencies": {
         "@nuxtjs/vuetify": "^1.0.0",

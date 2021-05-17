@@ -12,8 +12,7 @@
 
     <v-row
       v-else
-      class="height-100 d-flex align-center align-content-space-around flex-wrap"
-      justify="space-between"
+      class="height-100 d-flex align-center align-content-space-around justify-space-between flex-wrap"
     >
       <v-col cols="12" xl="5" lg="5" class="d-flex align-center">
         <v-lazy
@@ -24,7 +23,9 @@
           transition="scroll-x-transition"
         >
           <div class="text-left">
-            <h3 class="headline font-weight-medium">Egwuchukwu S. Diala</h3>
+            <h3 class="headline font-weight-medium">
+              Egwuchukwu S. Diala
+            </h3>
             <h3 class="subtitle-2 font-weight-medium secondary--text">
               VueJs Developer
             </h3>
@@ -38,7 +39,7 @@
               Vuex, Vue Router and Nuxt.&#8221;
             </blockquote>
             <br />
-            <v-row justify="left" data-aos="fade-right">
+            <v-row class="d-flex justify-left">
               <a
                 v-for="(link, i) in links"
                 :key="i"
@@ -93,8 +94,8 @@
                         <v-row>
                           <v-col cols="12">
                             <v-text-field
-                              v-for="input in inputs"
-                              :key="input"
+                              v-for="(input, k) in inputs"
+                              :key="k"
                               :type="input.type"
                               :name="input.name"
                               :label="input.label"
@@ -141,36 +142,53 @@
           }"
           transition="fade-transition"
         >
-          <div>
-            <h1 class="text-h5 text-center font-weight-medium">Projects</h1>
+          <div class="text-center mx-auto">
+            <h1 class="text-h5 font-weight-medium">
+              Projects
+            </h1>
             <v-virtual-scroll
               :bench="benched"
               :items="items"
-              height="400"
-              item-height="145"
-              class="hide"
+              height="360"
+              item-height="125"
+              class="hide my-2"
             >
               <template v-slot:default="{ item }">
-                <v-card :key="item" class="mx-auto" min-width="344">
+                <v-card :key="item" class="project-card" min-width="344">
                   <v-card-title>
-                    Top western road trips
+                    {{ item.title }}
                   </v-card-title>
 
-                  <v-card-subtitle>
-                    1,000 miles of wonder
-                  </v-card-subtitle>
-
                   <v-card-actions>
-                    <v-btn color="orange lighten-2" text>
+                    <v-btn
+                      v-if="item.live"
+                      :href="item.live"
+                      target="_blank"
+                      link
+                      small
+                      class="font-weight-light"
+                      color="orange"
+                      text
+                    >
                       Explore
                     </v-btn>
-                    <v-btn color="orange lighten-2" text>
-                      Github
+                    <v-btn
+                      v-if="item.source"
+                      :href="item.source"
+                      target="_blank"
+                      link
+                      small
+                      class="font-weight-light"
+                      color="blue"
+                      text
+                    >
+                      GitHub
                     </v-btn>
                   </v-card-actions>
                 </v-card>
               </template>
             </v-virtual-scroll>
+            <v-icon class="down" color="white">mdi-arrow-down</v-icon>
           </div>
         </v-lazy>
       </v-col>
@@ -220,15 +238,45 @@ export default {
           name: 'email',
           label: 'Email'
         }
+      ],
+      projects: [
+        {
+          title: 'QLIP',
+          live: 'https://qlipit.io',
+          source: 'https://github.com/egdiala/qlip'
+        },
+        {
+          title: 'My Portfolio',
+          source: 'https://github.com/Weeb-Develooper/egdiala'
+        },
+        {
+          title: 'OtakonTitan',
+          live: 'https://otakontitan.netlify.app',
+          source: 'https://github.com/egdiala/otakontitan'
+        },
+        {
+          title: "Wendy's Portfolio",
+          live: 'https://wendywu.netlify.app',
+          source: 'https://github.com/Weeb-Develooper/egdiala'
+        },
+        {
+          title: 'Music Parrot',
+          live: 'https://musicparrot.netlify.app',
+          source: 'https://github.com/egdiala/music-parrot'
+        },
+        {
+          title: 'News App',
+          source: 'https://github.com/egdiala/news-app'
+        }
       ]
     }
   },
   computed: {
     items() {
-      return Array.from({ length: this.length }, (k, v) => v + 1)
-    },
-    length() {
-      return 20
+      const projects = this.projects
+      // const projectsLength = this.projects.length
+
+      return projects
     }
   },
   created() {
@@ -236,6 +284,11 @@ export default {
       this.isLoading = false
       this.overlay = false
     }, 5000)
+  },
+  methods: {
+    random(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min
+    }
   },
   head() {
     return {
@@ -255,5 +308,29 @@ export default {
 <style scoped>
 ::-webkit-scrollbar {
   display: none;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-10px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+.down {
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+}
+
+.project-card {
+  border-radius: 8px !important;
 }
 </style>
