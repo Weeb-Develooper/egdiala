@@ -75,7 +75,6 @@
                       method="POST"
                       data-netlify="true"
                       data-netlify-honeypot="bot-field"
-                      @submit.prevent
                     >
                       <v-toolbar color="primary" class="subtitle-1" dark>
                         Get in touch! 😁
@@ -119,7 +118,6 @@
                               block
                               :ripple="false"
                               color="green"
-                              @submit.stop
                               >SEND</v-btn
                             >
                           </v-col>
