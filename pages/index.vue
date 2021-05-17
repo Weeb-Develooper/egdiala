@@ -292,7 +292,7 @@ export default {
   },
   head() {
     return {
-      title: 'Egwuchukwu S. Diala',
+      title: 'Egwuchukwu S. Diala'
     }
   }
 }
