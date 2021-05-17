@@ -292,14 +292,7 @@ export default {
   },
   head() {
     return {
-      title: 'Home',
-      meta: [
-        {
-          hid: 'description',
-          name: 'home',
-          content: 'Welcome to my portfolio website.'
-        }
-      ]
+      title: 'Egwuchukwu S. Diala',
     }
   }
 }
