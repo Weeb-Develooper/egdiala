@@ -151,8 +151,8 @@
               item-height="125"
               class="hide my-2"
             >
-              <template v-slot:default="{ item }">
-                <v-card :key="item" class="project-card" min-width="344">
+              <template v-slot:default="{ item, m }">
+                <v-card :key="m" class="project-card" min-width="344">
                   <v-card-title>
                     {{ item.title }}
                   </v-card-title>
@@ -168,7 +168,7 @@
                       color="orange"
                       text
                     >
-                      Explore
+                      View
                     </v-btn>
                     <v-btn
                       v-if="item.source"

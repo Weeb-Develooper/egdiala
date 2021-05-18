@@ -7,8 +7,9 @@
 
     <v-footer
       class="card-border"
-      app
       dark
+      app
+      absolute
       padless
       :style="{ background: $vuetify.theme.themes.dark.background }"
     >
@@ -48,5 +49,6 @@ export default {
 
 .card-border {
   border: none;
+  border-top-color: #000;
 }
 </style>
