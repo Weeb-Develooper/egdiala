@@ -33,7 +33,7 @@
             <blockquote>
               &#8220;Hello! 👋🏾 I’m a Frontend Engineer based in Lagos, Nigeria
               and I'm passionate about making the web accessible to everyone and
-              building communities. I love making things that might possibly
+              building communities. I love making things that
               work using code. I've worked for 2 years as a frontend developer
               and UI developer. I have hands-on experience working with Vue,
               Vuex, Vue Router and Nuxt.&#8221;
