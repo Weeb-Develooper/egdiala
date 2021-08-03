@@ -239,9 +239,12 @@ export default {
       ],
       projects: [
         {
+          title: 'Greater Favour',
+          live: 'https://staging.greaterfavour.foundation/'
+        },
+        {
           title: 'QLIP',
-          live: 'https://qlipit.io',
-          source: 'https://github.com/egdiala/qlip'
+          live: 'https://qlipit.io'
         },
         {
           title: 'My Portfolio',
@@ -254,8 +257,7 @@ export default {
         },
         {
           title: "Wendy's Portfolio",
-          live: 'https://wendywu.netlify.app',
-          source: 'https://github.com/Weeb-Develooper/egdiala'
+          live: 'https://wendywu.netlify.app'
         },
         {
           title: 'Music Parrot',
