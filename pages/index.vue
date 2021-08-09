@@ -27,14 +27,14 @@
               Egwuchukwu S. Diala
             </h3>
             <h3 class="subtitle-2 font-weight-medium secondary--text">
-              VueJs Developer
+              VueJs Developer / UI Designer
             </h3>
             <br />
             <blockquote>
-              &#8220;Hello! 👋🏾 I’m a Frontend Engineer based in Lagos, Nigeria
-              and I'm passionate about making the web accessible to everyone and
-              building communities. I love making things that
-              work using code. I've worked for 2 years as a frontend developer
+              &#8220;Hello! 👋🏾 I’m a design minded Frontend Engineer based in
+              Lagos, Nigeria and I'm passionate about making the web accessible
+              to everyone and building communities. I love making things that
+              work using code. I've worked for 2+ years as a frontend developer
               and UI developer. I have hands-on experience working with Vue,
               Vuex, Vue Router and Nuxt.&#8221;
             </blockquote>
@@ -223,6 +223,11 @@ export default {
           url: 'https://twitter.com/e_diala?s=09',
           dataIcon: 'twitter',
           color: 'rgba(29,161,242,1.00)'
+        },
+        {
+          url: 'https://dribbble.com/egdiala',
+          dataIcon: 'dribbble',
+          color: '#ea4c89'
         }
       ],
       inputs: [
