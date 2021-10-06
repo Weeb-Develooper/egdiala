@@ -35,8 +35,8 @@
               Lagos, Nigeria and I'm passionate about making the web accessible
               to everyone and building communities. I love making things that
               work using code. I've worked for 2+ years as a frontend developer
-              and UI developer. I have hands-on experience working with Vue,
-              Vuex, Vue Router and Nuxt.&#8221;
+              and UI developer. I have hands-on experience working with Vuetify, TailwindCSS, Vue,
+              Vuex, Vue Router, Typescript and Nuxt.&#8221;
             </blockquote>
             <br />
             <v-row class="d-flex justify-left">
