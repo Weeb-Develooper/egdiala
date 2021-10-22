@@ -24,7 +24,7 @@
         >
           <div class="text-left">
             <h3 class="headline font-weight-medium">
-              Egwuchukwu S. Diala
+              Egwuchukwu Stephen Diala
             </h3>
             <h3 class="subtitle-2 font-weight-medium secondary--text">
               VueJs Developer / UI Designer
@@ -210,7 +210,7 @@ export default {
       benched: 0,
       links: [
         {
-          url: 'https://www.linkedin.com/in/diala-egwuchukwu-006a33180',
+          url: 'https://www.linkedin.com/in/egwuchukwu-diala-006a33180/',
           dataIcon: 'linkedin',
           color: '#0A66C2'
         },

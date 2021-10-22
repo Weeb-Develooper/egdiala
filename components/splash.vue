@@ -61,11 +61,11 @@ export default {
 </script>
 
 <style scoped>
-* {
+/* * {
   padding: 25px;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
 #logo {
   animation: fill 0.5s ease forwards 3.5s;
