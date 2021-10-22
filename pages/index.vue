@@ -9,7 +9,6 @@
     >
       <Splash />
     </v-overlay>
-
     <v-row
       v-else
       class="height-100 d-flex align-center align-content-space-around justify-space-between flex-wrap"
@@ -35,8 +34,8 @@
               Lagos, Nigeria and I'm passionate about making the web accessible
               to everyone and building communities. I love making things that
               work using code. I've worked for 2+ years as a frontend developer
-              and UI developer. I have hands-on experience working with Vuetify, TailwindCSS, Vue,
-              Vuex, Vue Router, Typescript and Nuxt.&#8221;
+              and UI developer. I have hands-on experience working with Vuetify,
+              TailwindCSS, Vue, Vuex, Vue Router, Typescript and Nuxt.&#8221;
             </blockquote>
             <br />
             <v-row class="d-flex justify-left">
@@ -196,6 +195,7 @@
 
 <script>
 import Splash from '~/components/splash.vue'
+
 export default {
   components: { Splash },
   data() {
@@ -297,7 +297,7 @@ export default {
   },
   head() {
     return {
-      title: 'Egwuchukwu S. Diala'
+      title: 'Egwuchukwu Stephen Diala'
     }
   }
 }

@@ -17,7 +17,7 @@
         <v-row>
           <v-col cols="12" class="d-flex align-center secondary--text text-left"
             ><h4 class="font-weight-medium">
-              Ⓒ Egwuchukwu Diala {{ new Date().getFullYear() }}
+              Ⓒ Egwuchukwu Stephen Diala {{ new Date().getFullYear() }}
             </h4></v-col
           >
         </v-row>
