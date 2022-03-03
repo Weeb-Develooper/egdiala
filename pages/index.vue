@@ -26,16 +26,16 @@
               Egwuchukwu Stephen Diala
             </h3>
             <h3 class="subtitle-2 font-weight-medium secondary--text">
-              VueJs Developer / UI Designer
+              Frontend Developer / UI Designer
             </h3>
             <br />
             <blockquote>
               &#8220;Hello! 👋🏾 I’m a design minded Frontend Engineer based in
               Lagos, Nigeria and I'm passionate about making the web accessible
               to everyone and building communities. I love making things that
-              work using code. I've worked for 2+ years as a frontend developer
-              and UI developer. I have hands-on experience working with Vuetify,
-              TailwindCSS, Vue, Vuex, Vue Router, Typescript and Nuxt.&#8221;
+              work using code. I have over 3 years of industry experience as a Frontend Developer
+              and UI Developer. I have hands-on experience working with Vuetify,
+              TailwindCSS, Vue, Vuex, Vue Router, Typescript, Storybook and Nuxt.&#8221;
             </blockquote>
             <br />
             <v-row class="d-flex justify-left">
@@ -148,7 +148,7 @@
               :items="items"
               height="360"
               item-height="125"
-              class="hide my-2"
+              class="hide my-2 px-2"
             >
               <template v-slot:default="{ item, m }">
                 <v-card :key="m" class="project-card" min-width="344">
@@ -210,7 +210,7 @@ export default {
       benched: 0,
       links: [
         {
-          url: 'https://www.linkedin.com/in/egwuchukwu-diala-006a33180/',
+          url: 'https://www.linkedin.com/in/egwuchukwu-diala/',
           dataIcon: 'linkedin',
           color: '#0A66C2'
         },
@@ -249,30 +249,20 @@ export default {
         },
         {
           title: 'QLIP',
-          live: 'https://qlipit.io'
+          live: 'https://qlip.netlify.app/'
         },
         {
-          title: 'My Portfolio',
-          source: 'https://github.com/Weeb-Develooper/egdiala'
+          title: "Crypto P2P Landing",
+          live: 'https://nova-wallet.netlify.app'
         },
         {
-          title: 'OtakonTitan',
-          live: 'https://otakontitan.netlify.app',
-          source: 'https://github.com/egdiala/otakontitan'
+          title: 'Dashboard UI',
+          live: 'https://egdiala-dashboard-ui.netlify.app/'
         },
         {
-          title: "Wendy's Portfolio",
-          live: 'https://wendywu.netlify.app'
+          title: "Public APIs",
+          live: 'https://feld-m.netlify.app/'
         },
-        {
-          title: 'Music Parrot',
-          live: 'https://musicparrot.netlify.app',
-          source: 'https://github.com/egdiala/music-parrot'
-        },
-        {
-          title: 'News App',
-          source: 'https://github.com/egdiala/news-app'
-        }
       ]
     }
   },
